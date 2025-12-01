@@ -16,7 +16,7 @@ spec:
       - name: chai-app
         image: vickeys/boardgame:main-7
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         resources:
           requests:
             memory: "64Mi"
