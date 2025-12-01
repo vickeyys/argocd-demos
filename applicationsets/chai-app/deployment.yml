@@ -12,17 +12,11 @@ spec:
       labels:
         app: chai-app
     spec:
-      containers:
+      containers: vickeys/tetris:v1-16
       - name: chai-app
-        image: trainwithshubham/chai-devopsssss:v1.0.0
+        image: 
         ports:
-        - containerPort: 80
-        env:
-        - name: VITE_GEMINI_API
-          valueFrom:
-            secretKeyRef:
-              name: chai-app-secret
-              key: VITE_GEMINI_API
+        - containerPort: 3000
         resources:
           requests:
             memory: "64Mi"
