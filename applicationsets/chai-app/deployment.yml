@@ -16,7 +16,7 @@ spec:
       - name: chai-app
         image: vickeys/tetris:v1-16
         ports:
-        - containerPort: 3000
+        - containerPort: 80
         resources:
           requests:
             memory: "64Mi"
