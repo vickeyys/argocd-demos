@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: chai-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: chai-app
@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: chai-app
-        image: vickeys/tetris:v1-16
+        image: vickeys/boardgame:main-7
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         resources:
           requests:
             memory: "64Mi"
