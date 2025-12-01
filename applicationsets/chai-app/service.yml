@@ -6,7 +6,7 @@ spec:
   selector:
     app: chai-app
   ports:
-  - port: 3000
+  - port: 8083
     targetPort: 80
     protocol: TCP
   type: ClusterIP
